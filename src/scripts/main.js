@@ -1,6 +1,6 @@
 function initAccordion()
 {
-    const triggers = document.querySelectorAll('faq__trigger');
+    const triggers = document.querySelectorAll('.faq__trigger');
 
     for(var i = 0; i < triggers.length; i++)
     {
@@ -12,7 +12,7 @@ function initAccordion()
 
             this.setAttribute('aria-expanded', !isOpen);
             if (panel)
-                panel.hidden = !isOpen;
+                panel.hidden = isOpen;
         }
         )
     }

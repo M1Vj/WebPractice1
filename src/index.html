@@ -5,17 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="./styles/main.css">
   
   <title>Frontend Mentor | FAQ accordion</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
-  <script type="module" src="./script/main.js"></script>
+  <main class="faq" id="faq">
+    <h1>FAQs</h1>
+    <article class="faq__item">
+      <h2 class="faq__question">
+        <button
+          class="faq__trigger"
+          id="faq-trigger-1"
+          aria-expanded="false"
+          aria-controls="faq-panel-1">
+          What is Frontend Mentor, and how will it help me?
+        </button>
+      </h2>
+      <div
+        class="faq__panel"
+        id="faq-panel-1"
+        role="region"
+        aria-labelledby="faq-trigger-1"
+        hidden>
+        <p>
+          Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.
+        </p>
+      </div>
+    </article>
+  </main>
+  <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
